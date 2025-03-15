@@ -7,13 +7,13 @@ import lombok.Setter;
 import java.util.Set;
 
 @Entity
-@Table(name="product_category")
-// @Data might still be an issue with 1toMany relationships
-@Getter
+@Table(name = "product_category")
 @Setter
+@Getter
 public class ProductCategory {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 

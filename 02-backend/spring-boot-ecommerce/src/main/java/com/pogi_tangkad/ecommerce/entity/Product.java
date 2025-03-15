@@ -1,11 +1,12 @@
 package com.pogi_tangkad.ecommerce.entity;
 
+import org.hibernate.annotations.CreationTimestamp;
 import jakarta.persistence.*;
 import lombok.Data;
-import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-import java.util.Date;
+
 import java.math.BigDecimal;
+import java.util.Date;
 
 @Entity
 @Table(name="product")
@@ -14,7 +15,6 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     @Column(name = "id")
     private Long id;
 
