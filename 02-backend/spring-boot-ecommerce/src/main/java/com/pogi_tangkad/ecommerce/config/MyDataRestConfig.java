@@ -2,6 +2,7 @@ package com.pogi_tangkad.ecommerce.config;
 
 import com.pogi_tangkad.ecommerce.entity.Product;
 import com.pogi_tangkad.ecommerce.entity.ProductCategory;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
 import org.springframework.http.HttpMethod;
